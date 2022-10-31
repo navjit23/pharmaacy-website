@@ -1,0 +1,150 @@
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+header{
+    background-color: #094887;
+    height: 200px;
+    width: 100%;
+    margin: 0px;
+    padding: 15px 5px;
+}
+
+    header h1{
+        font-size: 70px;
+        color: aliceblue; 
+        text-align: center;   
+    
+    }
+    header h3{
+        color: aliceblue;
+        text-align: right;
+    }
+
+#main1{
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    
+}
+
+    #main1 div{
+        flex: 1;
+        position: relative;
+        padding-top: 10px;
+    }
+
+    #main1 #doc_image{
+        width: 350px;
+    }
+
+    #main1 #content{
+        width: 350px;
+        padding-top: 30px;  
+    }
+
+
+#main2{
+    height: 300px;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+
+}
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #main2 .services{
+        flex: 1;
+        flex-wrap: wrap;
+        border: 1px solid rgba(128, 128, 128, 0.466);
+        margin: auto 15px;
+        height: 200px;
+        text-align: center;
+    }
+
+
+    #main2 a{
+        text-decoration: none;
+        color: #094887;
+        font-weight: 900;
+        padding-bottom: 20px;
+    }
+
+    #main2 img{
+        width: 130px;
+    }
+
+footer{
+    display: flex;
+    background-color: #09488791;
+}
+
+    footer div{
+        flex: 1;
+        margin: auto;
+
+    }
+
+    footer p{
+        padding: 0px 30%;
+    }
+    footer ul{
+        list-style: none;
+        padding-left: 30%;
+    }
+
+
+
+
+
+@media screen and (max-width : 400px) {
+
+        header h1{
+            font-size: 40px;
+        }
+        header h3{
+            font-size: 10px;
+            text-align: justify;
+        }
+
+        
+        #main1 #doc_image{
+            display: none;
+        }
+        #main1{
+            display: block;
+            width: 80%;
+            margin: 0px auto ;
+        }
+
+        #main2{
+            display: block;
+            height: fit-content;
+        }
+            #main2 .services{
+                height: fit-content;
+                padding: 20px;
+            }
+
+
+            #main2 img{
+                width: 30px;
+            }
+
+
+        footer{
+            display: block;
+        }
+            footer p, footer ul{
+                padding: 5px 10px;
+                text-align: center;
+            }
+        
+}
